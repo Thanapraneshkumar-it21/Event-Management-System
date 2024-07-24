@@ -1,0 +1,1780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Event</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+         .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #343a40; /* Bootstrap dark theme background color */
+            padding-top: 20px;
+            font-family: Verdana, sans-serif; /* Verdana font */
+            color: white;
+            overflow-y: auto;
+            margin-top: 55px;
+        }
+
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #343a40; /* Bootstrap dark theme background color */
+            padding-top: 20px;
+            font-family: Verdana, sans-serif; /* Verdana font */
+            color: white;
+            overflow-y: auto;
+            margin-top: 55px;
+            font-size: 0.8rem; /* Small font size */
+        }
+
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+
+        .sidebar a:hover {
+            background-color: #454d55; /* Bootstrap dark theme hover color */
+        }
+
+        .content {
+            margin-left: 250px; /* Same width as sidebar */
+            padding: 20px;
+        }
+
+        .breadcrumbs {
+            padding-bottom: 10px;
+            font-size: 18px;
+        }
+         /* Responsive adjustments */
+         @media (max-width: 992px) {
+            .sidebar {
+                width: 100%;
+                z-index: 1;
+                height: auto;
+                position: relative;
+            }
+            .content {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <!-- Portal Name -->
+            <span class="navbar-brand">BIT - EVENTS</span>
+            <!-- User Name and Toggle Button -->
+            <div class="d-flex">
+                <span class="navbar-text me-3">THANAPRANESH KUMAR K</span>
+                
+            </div>
+        </div>
+    </nav>
+    
+    <div class="sidebar">
+        <a href="index.html">Home</a>
+        <a href="view.html">View</a>
+        <a href="#">All Application</a>
+        <a href="#">Users</a>
+    </div>
+    <br><br>
+    <!-- Main Content -->
+    <div class="content">
+    <div class="container mt-3">
+        <!-- Breadcrumbs -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Create Event</li>
+                <li class="breadcrumb-item active" aria-current="page">Event Requiremnts</li>
+
+            </ol>
+        </nav>
+<hr>
+
+
+<!-- Audio form -->
+  <div id="audioForm" >
+    <h4>Audio Form</h4>
+        <div class="mb-3">
+            <label for="handMic" class="form-label">Hand Mic</label>
+            <input type="number" class="form-control" id="handMic" name="handMic" value="2">
+        </div>
+        <div class="mb-3">
+            <label for="collarMic" class="form-label">Collar Mic</label>
+            <input type="number" class="form-control" id="collarMic" name="collarMic" value="2">
+        </div>
+        <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" value="" id="acCheckbox" checked>
+            <label class="form-check-label" for="acCheckbox">
+                AC
+            </label>
+        </div>
+        <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" value="" id="projectorCheckbox" checked>
+            <label class="form-check-label" for="projectorCheckbox">
+                Projector
+            </label>
+        </div>
+        <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" value="" id="liveScreeningCheckbox" checked>
+            <label class="form-check-label" for="liveScreeningCheckbox">
+                Live Screening
+            </label>
+        </div>
+  </div>
+  <!-- Accesories form -->
+<div id="accessoriesForm" >
+    <h4>Accessories Form</h4>
+    <div class="mb-3">
+        <label for="date" class="form-label">Date</label>
+        <input type="text" class="form-control" id="date" name="date" value="05.04.2024">
+    </div>
+    <div class="mb-3">
+        <label for="venue" class="form-label">Name of the Venue</label>
+        <input type="text" class="form-control" id="venue" name="venue" value="SF 1 SEMINAR HALL">
+    </div>
+    <div class="mb-3">
+        <label for="scribblingPad" class="form-label">Scribbling Pad</label>
+        <input type="number" class="form-control" id="scribblingPad" name="scribblingPad" value="5">
+    </div>
+    <div class="mb-3">
+        <label for="penPencil" class="form-label">Pen/Pencil</label>
+        <input type="number" class="form-control" id="penPencil" name="penPencil" value="5">
+    </div>
+    <div class="mb-3">
+        <label for="waterBottles" class="form-label">Water Bottles</label>
+        <input type="number" class="form-control" id="waterBottles" name="waterBottles" value="10">
+    </div>
+</div>
+<!-- venueForm -->
+<div id="venueForm" >
+    <!-- Venue Requirements -->
+    <h4>Venue <Form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    </Form></h4>
+    <div class="mb-3">
+        <label>Venue Requirements</label>
+        <div class="form-check">
+            <label class="form-check-label" for="classroomCheckbox">Classroom</label>
+            <input type="number" class="form-control" id="classroom" name="classroom" value="0">
+        </div>
+        <div class="form-check">
+            <label class="form-check-label" for="seminarHallCheckbox">Seminar Hall</label>
+            <input type="number" class="form-control" id="seminarHall" name="seminarHall" value="1">
+        </div>
+        <div class="form-check">
+            <label class="form-check-label" for="auditoriumCheckbox">Auditorium</label>
+            <input type="number" class="form-control" id="auditorium" name="auditorium" value="0">
+        </div>
+    </div>
+    <!-- Hall Requirements -->
+    <div class="mb-3">
+        <label>Hall Requirements</label>
+        <!-- Add checkboxes and input fields for hall requirements -->
+    </div>
+    <div class="form-check mb-3">
+        <label class="form-check-label" for="internetFacilityCheckbox">Internet Facility</label>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="lanCheckbox" checked>
+            <label class="form-check-label" for="lanCheckbox" >LAN</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="wifiCheckbox" checked>
+            <label class="form-check-label" for="wifiCheckbox">WIFI</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="bothCheckbox" checked>
+            <label class="form-check-label" for="bothCheckbox">Both</label>
+        </div>
+        <div class="mb-3">
+            <label for="expectedInternetUsers" class="form-label">Expected Internet Users (if applicable)</label>
+            <input type="number" class="form-control" id="expectedInternetUsers" name="expectedInternetUsers" value="150"> 
+        </div>
+    </div>
+</div>
+
+    <a href="index.html" type="submit" class="btn btn-success">APPROVE</a>
+    <a href="create-event.html" type="reset" class="btn btn-danger">REJECT</a>
+
+</div>
+
+</form>
+</div>
+</div>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
